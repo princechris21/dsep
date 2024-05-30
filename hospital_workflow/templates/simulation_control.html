@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulation Control</title>
+  <link rel="stylesheet" href="/static/simulation_control.css">
+</head>
+<body>
+  <div class="main-content">
+    <div id="simulationControl" class="section active">
+      <h2>Simulation Control</h2>
+      
+      <!-- Simulation Setup -->
+      <div id="simulationSetup" class="sub-section">
+        <h3>Simulation Setup</h3>
+        <form id="simulationForm">
+          <label for="dataSelect">Select Data:</label>
+          <select id="dataSelect">
+            <option value="patientData">Patient Data</option>
+            <option value="resourceData">Resource Data</option>
+            <!-- Add more data options as needed -->
+          </select>
+          
+          <label for="simulationParameters">Set Parameters:</label>
+          <input type="text" id="simulationParameters" placeholder="Enter parameters">
+          
+          <button type="button" id="startSimulationBtn">Start Simulation</button>
+        </form>
+      </div>
+      
+      <!-- Simulation Controls -->
+      <div id="simulationControls" class="sub-section">
+        <h3>Simulation Controls</h3>
+        <button id="pauseSimulationBtn">Pause</button>
+        <button id="resumeSimulationBtn">Resume</button>
+        <button id="stopSimulationBtn">Stop</button>
+        
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="10" value="5">
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/simulation_control.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Workflow Management Dashboard</title>
+  <link rel="stylesheet" href="/static/patient_data.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="#" class="menu-item" data-section="home">Home & Overview</a></li>
+      <li><a href="#" class="menu-item" data-section="patientData">Patient Data</a></li>
+      <li><a href="#" class="menu-item" data-section="resourceManagement">Resource Management</a></li>
+      <li><a href="#" class="menu-item" data-section="simulationControl">Simulation Control</a></li>
+      <li><a href="#" class="menu-item" data-section="resultsReports">Results & Reports</a></li>
+      <li><a href="#" class="menu-item" data-section="settings">Settings</a></li>
+      <li><a href="#" class="menu-item" data-section="helpSupport">Help & Support</a></li>
+      <li><a href="#" id="logoutButton">Logout</a></li>
+    </ul>
+  </div>
+  
+  <div class="main-content">
+    <div id="home" class="section active">
+      <h2>Home & Overview</h2>
+      <p>Welcome to the Hospital Workflow Management Dashboard.</p>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#" class="quick-link" data-section="patientData">Patient Data</a></li>
+          <li><a href="#" class="quick-link" data-section="resourceManagement">Resource Management</a></li>
+          <li><a href="#" class="quick-link" data-section="simulationControl">Simulation Control</a></li>
+          <li><a href="#" class="quick-link" data-section="resultsReports">Results & Reports</a></li>
+          <li><a href="#" class="quick-link" data-section="settings">Settings</a></li>
+          <li><a href="#" class="quick-link" data-section="helpSupport">Help & Support</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="patientData" class="section hidden">
+      <h2>Patient Data</h2>
+      
+      <!-- Add Patient Form -->
+      <div id="addPatientForm" class="sub-section">
+        <h3>Add Patient</h3>
+        <form id="patientForm">
+          <label for="patientName">Name:</label>
+          <input type="text" id="patientName" name="patientName" required>
+
+          <label for="patientAge">Age:</label>
+          <input type="number" id="patientAge" name="patientAge" required>
+
+          <label for="patientGender">Gender:</label>
+          <select id="patientGender" name="patientGender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="patientCondition">Condition:</label>
+          <input type="text" id="patientCondition" name="patientCondition" required>
+
+          <button type="button" id="savePatientBtn">Save</button>
+          <button type="button" id="cancelPatientBtn">Cancel</button>
+        </form>
+      </div>
+      
+      <!-- Patient List -->
+      <div id="patientList" class="sub-section">
+        <h3>Patient List</h3>
+        <input type="text" id="searchPatient" placeholder="Search by name or condition">
+        <table id="patientTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Condition</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic content will be added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div id="resourceManagement" class="section hidden">
+      <h2>Resource Management</h2>
+      <!-- Resource Management Content -->
+    </div>
+
+    <div id="simulationControl" class="section hidden">
+      <h2>Simulation Control</h2>
+      <!-- Simulation Control Content -->
+    </div>
+
+    <div id="resultsReports" class="section hidden">
+      <h2>Results & Reports</h2>
+      <!-- Results & Reports Content -->
+    </div>
+
+    <div id="settings" class="section hidden">
+      <h2>Settings</h2>
+      <!-- Settings Content -->
+    </div>
+
+    <div id="helpSupport" class="section hidden">
+      <h2>Help & Support</h2>
+      <!-- Help & Support Content -->
+    </div>
+  </div>
+
+  <script src="/static/patient_data.js"></script>
+</body>
+</html>

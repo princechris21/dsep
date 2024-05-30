@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="/static/settings.css">
+</head>
+<body>
+  <div class="main-content">
+    <div id="settings" class="section active">
+      <h2>Settings</h2>
+
+      <!-- User Profile -->
+      <div id="userProfile" class="sub-section">
+        <h3>User Profile</h3>
+        <form id="userProfileForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter username" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email" required>
+
+          <button type="button" id="saveProfileBtn">Save</button>
+        </form>
+        <h3>Change Password</h3>
+        <form id="changePasswordForm">
+          <label for="currentPassword">Current Password:</label>
+          <input type="password" id="currentPassword" placeholder="Enter current password" required>
+          
+          <label for="newPassword">New Password:</label>
+          <input type="password" id="newPassword" placeholder="Enter new password" required>
+
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm new password" required>
+
+          <button type="button" id="changePasswordBtn">Change Password</button>
+        </form>
+      </div>
+
+      <!-- Application Settings -->
+      <div id="appSettings" class="sub-section">
+        <h3>Application Settings</h3>
+        <form id="appSettingsForm">
+          <label for="notificationPreferences">Notification Preferences:</label>
+          <select id="notificationPreferences">
+            <option value="all">All Notifications</option>
+            <option value="email">Email Only</option>
+            <option value="none">None</option>
+          </select>
+
+          <label for="systemConfig">System Configurations:</label>
+          <input type="text" id="systemConfig" placeholder="Enter system configurations" required>
+
+          <button type="button" id="saveSettingsBtn">Save Settings</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/settings.js"></script>
+</body>
+</html>

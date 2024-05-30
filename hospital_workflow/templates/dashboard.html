@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Workflow Management Dashboard</title>
+  <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="#" class="menu-item" data-section="home">Home & Overview</a></li>
+      <li><a href="#" class="menu-item" data-section="patientData">Patient Data</a></li>
+      <li><a href="#" class="menu-item" data-section="resourceManagement">Resource Management</a></li>
+      <li><a href="#" class="menu-item" data-section="simulationControl">Simulation Control</a></li>
+      <li><a href="#" class="menu-item" data-section="resultsReports">Results & Reports</a></li>
+      <li><a href="#" class="menu-item" data-section="settings">Settings</a></li>
+      <li><a href="#" class="menu-item" data-section="helpSupport">Help & Support</a></li>
+      <li><a href="#" id="logoutButton">Logout</a></li>
+    </ul>
+  </div>
+  
+  <div class="main-content">
+    <div id="home" class="section">
+      <h2>Home & Overview</h2>
+      <p>Welcome to the Hospital Workflow Management Dashboard.</p>
+    </div>
+    
+    <div id="patientData" class="section hidden">
+      <h2>Patient Data</h2>
+      <button onclick="showSubSection('addPatient')">Add Patient</button>
+      <button onclick="showSubSection('viewPatients')">View Patients</button>
+      <button onclick="showSubSection('editPatient')">Edit Patient</button>
+      <div id="addPatient" class="sub-section hidden">
+        <h3>Add Patient</h3>
+        <!-- Add Patient Form -->
+      </div>
+      <div id="viewPatients" class="sub-section hidden">
+        <h3>View Patients</h3>
+        <!-- View Patients List -->
+      </div>
+      <div id="editPatient" class="sub-section hidden">
+        <h3>Edit Patient</h3>
+        <!-- Edit Patient Form -->
+      </div>
+    </div>
+
+    <div id="resourceManagement" class="section hidden">
+      <h2>Resource Management</h2>
+      <button onclick="showSubSection('addResource')">Add Resource</button>
+      <button onclick="showSubSection('viewResources')">View Resources</button>
+      <button onclick="showSubSection('editResource')">Edit Resource</button>
+      <div id="addResource" class="sub-section hidden">
+        <h3>Add Resource</h3>
+        <!-- Add Resource Form -->
+      </div>
+      <div id="viewResources" class="sub-section hidden">
+        <h3>View Resources</h3>
+        <!-- View Resources List -->
+      </div>
+      <div id="editResource" class="sub-section hidden">
+        <h3>Edit Resource</h3>
+        <!-- Edit Resource Form -->
+      </div>
+    </div>
+
+    <div id="simulationControl" class="section hidden">
+      <h2>Simulation Control</h2>
+      <button onclick="showSubSection('simulationSetup')">Simulation Setup</button>
+      <button onclick="showSubSection('simulationControls')">Simulation Controls</button>
+      <div id="simulationSetup" class="sub-section hidden">
+        <h3>Simulation Setup</h3>
+        <!-- Simulation Setup Form -->
+      </div>
+      <div id="simulationControls" class="sub-section hidden">
+        <h3>Simulation Controls</h3>
+        <!-- Simulation Controls -->
+      </div>
+    </div>
+
+    <div id="resultsReports" class="section hidden">
+      <h2>Results & Reports</h2>
+      <button onclick="showSubSection('viewResults')">View Results</button>
+      <button onclick="showSubSection('detailedReports')">Detailed Reports</button>
+      <div id="viewResults" class="sub-section hidden">
+        <h3>View Results</h3>
+        <!-- View Results -->
+      </div>
+      <div id="detailedReports" class="sub-section hidden">
+        <h3>Detailed Reports</h3>
+        <!-- Detailed Reports -->
+      </div>
+    </div>
+
+    <div id="settings" class="section hidden">
+      <h2>Settings</h2>
+      <button onclick="showSubSection('userProfile')">User Profile</button>
+      <button onclick="showSubSection('applicationSettings')">Application Settings</button>
+      <div id="userProfile" class="sub-section hidden">
+        <h3>User Profile</h3>
+        <!-- User Profile Form -->
+      </div>
+      <div id="applicationSettings" class="sub-section hidden">
+        <h3>Application Settings</h3>
+        <!-- Application Settings Form -->
+      </div>
+    </div>
+
+    <div id="helpSupport" class="section hidden">
+      <h2>Help & Support</h2>
+      <button onclick="showSubSection('userGuide')">User Guide</button>
+      <button onclick="showSubSection('contactSupport')">Contact Support</button>
+      <div id="userGuide" class="sub-section hidden">
+        <h3>User Guide</h3>
+        <!-- User Guide Content -->
+      </div>
+      <div id="contactSupport" class="sub-section hidden">
+        <h3>Contact Support</h3>
+        <!-- Contact Support Form -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>

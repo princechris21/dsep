@@ -1,0 +1,144 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f0f2f5;
+  }
+  
+  .sidebar {
+    background-color: #2c3e50;
+    color: white;
+    width: 220px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    color: #ecf0f1;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    background-color: #34495e;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #1abc9c;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 240px; /* Width of the sidebar + padding */
+    background-color: #ecf0f1;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  .section h2 {
+    margin-top: 0;
+    color: #34495e;
+  }
+  
+  button {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #16a085;
+  }
+  
+  .sub-section {
+    margin-top: 20px;
+  }
+  
+  .sub-section.hidden {
+    display: none;
+  }
+  
+  .sub-section h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  label {
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  #patientTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #patientTable th, #patientTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #patientTable th {
+    background-color: #34495e;
+    color: white;
+  }
+  
+  #patientTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #searchPatient {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  

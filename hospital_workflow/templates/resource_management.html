@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Workflow Management Dashboard</title>
+  <link rel="stylesheet" href="/static/resource_management.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="#" class="menu-item" data-section="home">Home & Overview</a></li>
+      <li><a href="#" class="menu-item" data-section="patientData">Patient Data</a></li>
+      <li><a href="#" class="menu-item" data-section="resourceManagement">Resource Management</a></li>
+      <li><a href="#" class="menu-item" data-section="simulationControl">Simulation Control</a></li>
+      <li><a href="#" class="menu-item" data-section="resultsReports">Results & Reports</a></li>
+      <li><a href="#" class="menu-item" data-section="settings">Settings</a></li>
+      <li><a href="#" class="menu-item" data-section="helpSupport">Help & Support</a></li>
+      <li><a href="#" id="logoutButton">Logout</a></li>
+    </ul>
+  </div>
+  
+  <div class="main-content">
+    <div id="resourceManagement" class="section active">
+      <h2>Resource Management</h2>
+      
+      <!-- Add Resource Form -->
+      <div id="addResourceForm" class="sub-section">
+        <h3>Add Resource</h3>
+        <form id="resourceForm">
+          <label for="resourceName">Resource Name:</label>
+          <input type="text" id="resourceName" name="resourceName" required>
+
+          <label for="resourceType">Resource Type:</label>
+          <input type="text" id="resourceType" name="resourceType" required>
+
+          <label for="resourceQuantity">Quantity:</label>
+          <input type="number" id="resourceQuantity" name="resourceQuantity" required>
+
+          <button type="button" id="saveResourceBtn">Save</button>
+          <button type="button" id="cancelResourceBtn">Cancel</button>
+        </form>
+      </div>
+      
+      <!-- Resource List -->
+      <div id="resourceList" class="sub-section">
+        <h3>Resource List</h3>
+        <input type="text" id="searchResource" placeholder="Search by name or type">
+        <table id="resourceTable">
+          <thead>
+            <tr>
+              <th>Resource Name</th>
+              <th>Type</th>
+              <th>Quantity</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic content will be added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/resource_management.js"></script>
+</body>
+</html>

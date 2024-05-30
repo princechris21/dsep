@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results and Reports</title>
+  <link rel="stylesheet" href="/static/results_reports.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graphs -->
+</head>
+<body>
+  <div class="main-content">
+    <div id="resultsReports" class="section active">
+      <h2>Results and Reports</h2>
+      
+      <!-- View Results -->
+      <div id="viewResults" class="sub-section">
+        <h3>View Results</h3>
+        <canvas id="resultsChart" width="400" height="200"></canvas>
+      </div>
+      
+      <!-- Detailed Reports -->
+      <div id="detailedReports" class="sub-section">
+        <h3>Detailed Reports</h3>
+        <button id="downloadReportBtn">Download Report</button>
+        <button id="viewHistoricalDataBtn">View Historical Data</button>
+        <div id="historicalData" style="display:none;">
+          <h4>Historical Data</h4>
+          <ul id="historicalDataList"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/results_reports.js"></script>
+</body>
+</html>

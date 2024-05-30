@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help/Support</title>
+  <link rel="stylesheet" href="/static/help_support.css">
+</head>
+<body>
+  <div class="main-content">
+    <div id="helpSupport" class="section active">
+      <h2>Help & Support</h2>
+
+      <!-- FAQ Section -->
+      <div id="faq" class="sub-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item">
+          <h4 class="faq-question">How do I reset my password?</h4>
+          <p class="faq-answer">To reset your password, go to the settings page, and click on "Change Password". Enter your current password and the new password twice to confirm.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">How can I contact support?</h4>
+          <p class="faq-answer">You can contact support by emailing support@hospitalapp.com or by calling our support hotline at 1-800-123-4567.</p>
+        </div>
+        <!-- Add more FAQ items as needed -->
+      </div>
+
+      <!-- Contact Support Section -->
+      <div id="contactSupport" class="sub-section">
+        <h3>Contact Support</h3>
+        <form id="contactSupportForm">
+          <label for="supportEmail">Email:</label>
+          <input type="email" id="supportEmail" placeholder="Enter your email" required>
+          
+          <label for="supportMessage">Message:</label>
+          <textarea id="supportMessage" placeholder="Enter your message" required></textarea>
+
+          <button type="button" id="sendSupportMessageBtn">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/help_support.js"></script>
+</body>
+</html>

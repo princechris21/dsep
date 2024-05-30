@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Workflow Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.email.label }} {{ form.email }}
+        </div>
+        <div>
+            {{ form.password.label }} {{ form.password }}
+        </div>
+        <div>
+          {{ form.remember.label }} {{ form.remember }}
+        </div>
+        <div>
+            {{ form.submit }}
+        </div>
+    </form>
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+</body>
+</html>
